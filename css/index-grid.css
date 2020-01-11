@@ -1,0 +1,282 @@
+/* MOBILE FIRST CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  background-color: #999;
+  padding: 1px;
+}
+
+body {
+  font-family: verdana;
+  background-color: #747474;
+  background-image: url(../images/bkgnd/jump_up.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#name {
+  text-align: center;
+  font-family: verdana;
+  font-style: italic;
+  color: #333;
+}
+
+#name h1 {
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+#name p {
+  font-size: 1.5em;
+}
+
+.navigation {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navigation a {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.navigation a:link {
+  color: #333;
+}
+
+.navigation a:hover {
+  color: #06F
+}
+
+.nav_icon {
+  width: 48px;
+}
+
+.nav_text {
+  display: none;
+}
+
+/* 
+  hide the top_nav in the mobile view.
+
+  If you want to display it, just remove or 
+  comment out the #top_nav section here
+*/
+#top_nav {
+  display: none;
+}
+
+#banner img {
+  width: 100%;
+  max-width: 800px;
+}
+
+#slogan {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  font-family: times;
+  color: #333;
+}
+
+#content {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+#content h2 {
+  font-size: 1.25em;
+  color: #333;
+  text-align: center;
+}
+
+#content img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+#content #text {
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: #CCC;
+  color: #333;
+}
+
+#sidebar {
+  text-align: center;
+}
+
+#sidebarheader {
+  color: #333;
+}
+
+#sidebarcontent {
+  background-color: #666;
+  font-size: 1.125em;
+  color: #CCC;
+}
+
+#quote a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#quote a:hover {
+  color: #333
+}
+
+#quote {
+  background-color: #06F;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 1em 0;
+  color: #FFF;
+}
+
+#times {
+  text-align: center;
+  margin: auto;
+}
+
+#hours {
+  font-size: 1.25em;
+  text-align: center;
+  background-color: #333;
+  color: #CCC;
+}
+
+#hours h3 {
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+#footer {
+  text-align: center;
+  font-size: .75em;
+  color: #333;
+}
+
+/* MOBILE SPECIFIC CSS */
+@media (max-width: 800px) {
+  #text p {
+    margin: 1em 0;
+  }
+}
+
+/* DESKTOP SPECIFIC CSS */
+@media (min-width: 800px) {
+  #text {
+    padding: 1em;
+  }
+
+  #wrapper {
+    padding: 1.125em;
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "name     name    tnav    tnav    tnav"
+      "banner   banner  banner  banner  banner"
+      "slogan   slogan  slogan  slogan  slogan"
+      "main     main    main    main    main"
+      "footer   footer  footer  footer  footer"
+    ;
+    align-items: center;
+  }
+
+  .nav_icon {
+    display: none;
+  }
+
+  .nav_text {
+    display: inline-block;
+  }
+
+  #top_nav {
+    display: grid;
+  }
+
+  #bottom_nav {
+    display: none;
+  }
+
+  #name {
+    grid-area: name;
+  }
+
+  #top_nav {
+    vertical-align: middle;
+    grid-area: tnav;
+  }
+
+  #banner {
+    grid-area: banner;
+  }
+
+  #slogan {
+    grid-area: slogan;
+  }
+
+  #main {
+    grid-area: main;
+    display: grid;
+    margin-top: 2.5em;
+    grid-gap: 5em;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      "content content content content sidebar sidebar sidebar";
+  }
+
+  #content {
+    grid-area: content;
+  }
+
+  #sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  #footer {
+    grid-area: footer;
+  }
+
+  /* I recommend removing or tweaking the styles below */
+  /* I also recommend reviewing all gaps, padding and margins throughout the entire stylesheet */
+  #sidebarheader {
+    margin: 15px 0px;
+    margin-top: 30px;
+  }
+
+  #sidebarcontent {
+    padding: 30px 0px;
+  }
+
+  #quote {
+    margin: 15px 0px;
+  }
+
+  #business {
+    margin-bottom: 15px;
+  }
+
+  #hours {
+    margin: 50px 0px;
+    padding: 30px 0px;
+  }
+}

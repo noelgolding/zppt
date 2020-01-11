@@ -1,0 +1,288 @@
+/* MOBILE FIRST CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  background-color: #999;
+  padding: 1px;
+}
+
+body {
+  font-family: verdana;
+  background-color: #747474;
+  background-image: url(../images/bkgnd/jump_up.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#name {
+  text-align: center;
+  font-family: verdana;
+  color: #333;
+}
+
+#name h1 {
+  font-size: 2.5em;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#name h2 {
+  font-style: italic;
+}
+
+#name p {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+/* 
+  hide the top_nav in the mobile view.
+
+  If you want to display it, just remove or 
+  comment out the #top_nav section here
+*/
+#top_nav {
+  display: none;
+}
+
+.nav_icon {
+  width: 48px;
+  margin: auto;
+  margin: 1.5em 0;
+}
+
+.nav_text {
+  display: none;
+}
+
+.navigation ul {
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-left: .75em;
+}
+
+.navigation a {
+  font-weight: bold;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.navigation a:link {
+  color: #333;
+}
+
+.navigation a:hover {
+  color: #06F
+}
+
+#slogan {
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-family: times;
+  color: #333;
+}
+
+#banner img {
+  max-width: 100%;
+}
+
+#content {
+  text-align: center;
+  font-size: 20px;
+}
+
+#content h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+#text {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  background-color: #CCC;
+  color: #333;
+}
+
+#sidebarheader {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+#sidebarcontent {
+  text-align: center;
+  background-color: #666;
+  font-size: 18px;
+  color: #CCC;
+}
+
+#quote a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#quote a:hover {
+  color: #333
+}
+
+#quote {
+  background-color: #06F;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 20px 0px;
+  color: #FFF;
+}
+
+#times {
+  text-align: center;
+  margin: auto;
+}
+
+#hours {
+  font-size: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #CCC;
+}
+
+#hours h3 {
+  font-size: 26px;
+  color: #ccc;
+}
+
+#footer {
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+
+/* MOBILE SPECIFIC CSS */
+@media (max-width: 800px) {
+  #text p {
+    margin: 1em 0;
+  }
+}
+
+/* DESKTOP SPECIFIC CSS */
+@media (min-width: 800px) {
+  #wrapper {
+    padding: 20px;
+  }
+
+  #name {
+    width: 300px;
+    float: left;
+    margin-bottom: 25px;
+  }
+
+  /* hide the bottom_nav in the desktop view */
+  #bottom_nav {
+    display: none;
+  }
+
+  #top_nav {
+    display: block;
+    width: 500px;
+    float: right;
+    text-align: right;
+  }
+
+  .nav_icon {
+    display: none;
+  }
+
+  .nav_text {
+    display: inline-block;
+  }
+
+  .navigation ul {
+    margin-top: 33px;
+  }
+
+  #slogan {
+    clear: both;
+    margin-bottom: 45px;
+  }
+
+  #banner {
+    clear: both;
+  }
+
+  #heading {
+    margin-bottom: 15px;
+  }
+
+  #content {
+    width: 400px;
+    float: left;
+    margin-top: 20px;
+  }
+
+  #text {
+    width: 370px;
+    padding: 15px;
+    margin-left: 0px;
+  }
+
+  #sidebarheader {
+    width: 320px;
+    float: right;
+    margin: 15px 0px;
+    margin-top: 30px;
+  }
+
+  #sidebarcontent {
+    width: 320px;
+    float: right;
+    padding: 30px 0px;
+  }
+
+  #quote {
+    width: 320px;
+    float: right;
+    margin: 15px 0px;
+  }
+
+  #business {
+    margin-bottom: 15px;
+  }
+
+  #times {
+    width: 250px;
+  }
+
+  #hours {
+    width: 320px;
+    margin: 50px 0px;
+    float: right;
+    padding: 30px 0px;
+  }
+
+  #logo1 {
+    width: 320px;
+    float: right;
+    margin-top: 0;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  #footer {
+    padding-top: 30px;
+  }
+}
