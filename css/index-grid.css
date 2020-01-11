@@ -66,16 +66,6 @@ body {
   display: none;
 }
 
-/* 
-  hide the top_nav in the mobile view.
-
-  If you want to display it, just remove or 
-  comment out the #top_nav section here
-*/
-#top_nav {
-  display: none;
-}
-
 #banner img {
   width: 100%;
   max-width: 800px;
@@ -206,19 +196,11 @@ body {
     display: inline-block;
   }
 
-  #top_nav {
-    display: grid;
-  }
-
-  #bottom_nav {
-    display: none;
-  }
-
   #name {
     grid-area: name;
   }
 
-  #top_nav {
+  .navigation {
     vertical-align: middle;
     grid-area: tnav;
   }
