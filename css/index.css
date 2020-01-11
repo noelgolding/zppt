@@ -108,9 +108,12 @@ body {
   text-align: center;
 }
 
+#content img {
+  max-width: 100%;
+}
+
 #text {
   text-align: left;
-  width: 50%;
   margin: auto;
   background-color: #CCC;
   color: #333;
